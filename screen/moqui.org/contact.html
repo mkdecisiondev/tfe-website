@@ -1,0 +1,64 @@
+
+    <body><!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRMZ36R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --
+-->
+      
+        <main class="main-content contact-us">
+            <div class="max-width">
+                <h1>Contact Us</h1>
+                <div class="row row-flush">
+                    <div class="form-and-cta">
+                        <form id="Contact" action="/apps/moqui.org/contact/Contact" class="contact-form" method="post">
+                            <input type="hidden" id="redirect" name="redirect" value>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="first_name">First Name<sup>*</sup></label>
+                                    <input name="firstName" autocomplete="given-name" type="text" pattern=".{2,}" required data-value-missing="Please enter your First Name" data-pattern-mismatch="Please re-enter your First Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="last_name">Last Name<sup>*</sup></label>
+                                    <input name="lastName" autocomplete="family-name" type="text" pattern=".{2,}" required data-value-missing="Please enter your Last Name" data-pattern-mismatch="Please re-enter your Last Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email">Email<sup>*</sup></label>
+                                    <input name="emailAddress" autocomplete="email" type="email" required data-value-missing="Please enter your Email Address" data-pattern-mismatch="Please enter a valid Email Address">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="phone">Phone Number<sup>*</sup></label>
+                                    <input id="phone" name="contactNumber" autocomplete="phone" type="tel" maxlength="13" required pattern="\d{3}[\-]{0,1}\d{3}[\-]{0,1}\d{4}" data-value-missing="Please enter a Phone Number" data-pattern-mismatch="Please enter a 10-digit Phone Number">
+                                </div>
+                                <div class="col-12">
+                                    <label for="type_of_question">Type of Question</label>
+                                    <select name="type_of_question" id="selectTypeOfQ">
+                                        <option name="description" class="type-of-q" value="general question">General Question</option>
+                                        <option name="description" class="type-of-q" value="reserve a service">Reserve a Service</option>
+                                        <option name="description" class="type-of-q" value="start serving">Start Serving</option>
+                                        <option name="description" class="type-of-q" value="suggestion">Suggestion</option>
+                                        <option name="description" class="type-of-q" value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="comment_box">I have a question about...<sup>*</sup></label>
+                                    <textarea name="description" required data-value-missing="Please enter a message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn button-primary contact-button">Contact Us</button>
+                            <!-- <script>
+                                    $("form").submit(function () {
+                                    $("#submit-button").text('Thank You').prop('disabled', true);
+                                });
+                                </script> -->
+                        </form>
+                        <div class="cta-and-address row row-flush">
+                            <a target="_blank" href="tel:1-602.632.9598" class="btn call-now-button col col-12 col-md-5">Call Now: 602.632.9598</a>
+                            <a class="address col-12 col-md-5 offset-md-2" href="https://www.google.com/maps/place/Guru+Nanak+Dwara/@33.4733076,-112.0642938,17z/data=!3m1!4b1!4m5!3m4!1s0x872b125f9d3f800b:0x4952a3dc1c4406b7!8m2!3d33.4733031!4d-112.0621051" target="_blank"><i class="fas fa-map-marker-alt fa-fw"></i>2302 N 9th St<span>, </span>Phoenix, AZ 85006</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.12/hyperform.min.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="seed">
+
+    <artifactGroups artifactGroupId="EMPLOYMENT_API">
+        <artifacts artifactName="component://moqui-org/screen/moqui.org/donateform*" artifactTypeEnumId="AT_XML_SCREEN_TRANS" inheritAuthz="Y" nameIsPattern="Y"/>
+        <artifacts artifactName="component://moqui-org/screen/moqui.org/donateform.xml" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y" nameIsPattern="N"/>
+        <artifacts artifactName="component://moqui-org/service/DonateServices.xml" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    </artifactGroups>
+
+  <moqui.security.ArtifactAuthz 
+    artifactAuthzId="donateform_AuthAll"
+    userGroupId="ALL_USERS" 
+    artifactGroupId="EMPLOYMENT_API"
+    authzTypeEnumId="AUTHZT_ALWAYS"
+    authzActionEnumId="AUTHZA_ALL" 
+    />
+
+</entity-facade-xml>

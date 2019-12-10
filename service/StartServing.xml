@@ -1,0 +1,42 @@
+<services>
+
+    <service verb="create" noun="Request" authenticate="anonymous-all">
+        <in-parameters>
+            <!-- Create person -->
+            <parameter name="firstName" required="true"/>
+            <parameter name="middleName"/>
+            <parameter name="lastName" required="true"/>
+            <parameter name="emailAddress" required="true"/>
+            <parameter name="contactNumber" required="true"/>
+            <parameter name="address1" required="true"/>
+            <parameter name="unitNumber"/>
+            <parameter name="postalCode" required="true"/>
+            <parameter name="city" required="true"/>
+            <parameter name="stateProvinceGeoId" required="true"/>
+            <!-- Create request -->
+            <parameter name="requestName" required="true"/>
+            <parameter name="description"/>
+        </in-parameters>
+
+        <out-parameters>
+        </out-parameters>
+
+        <actions>
+            <log message="---------------------Service hit-----------------------------"/>
+            <!-- Create Person -->
+            <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/>
+            <!-- Create Contact -->
+            <service-call name="mantle.party.ContactServices.store#PartyContactInfo" in-map="context" out-map="context"/>
+            <set field="filedByPartyId" from="partyId"/>
+            <set field="requestTypeEnumId" value="RqtInformation"/>
+            <!-- Create request -->
+            <service-call name="mantle.request.RequestServices.create#Request" in-map="context" out-map="context"/>
+            <script>
+                println "-------------------created-------------------------"
+                println context
+            </script>
+        </actions>
+    </service>
+</services> 
+<!-- https://demo.moqui.org/vapps/tools/Entity/DataEdit/EntityDetail?selectedEntity=mantle.request.Request -->
+<!-- https://demo.moqui.org/vapps/tools/Service/ServiceDetail?serviceName=mantle.request.RequestServices.create%23Request -->

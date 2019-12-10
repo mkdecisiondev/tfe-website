@@ -1,0 +1,123 @@
+/* media queries to match Bootstrap / Shoelace grid options for sm, md, lg, and xl */
+
+body {
+	background-color: #ebebeb;
+	color: #0a2f6c;
+	padding-top: 87px;
+}
+
+img.photos {
+    height: auto;
+    width: 100%;
+    min-height: 78px;
+}
+.vertical-navigator  ul.navigator-links li#photosNavItem a.nav-link {
+	color: #60cbd7;
+}
+
+.splash-wrapper.photos {
+	height: 0;
+	padding-bottom: 31.39%; /* 113 divided by 360 */
+	position: relative;
+	margin-bottom: 15px;
+	min-height: 113px
+}
+
+.splash-wrapper.photos .splash-inner.photos {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clear: both;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-height: 78px;
+	background-image: url('img/photos-splash-image.jpg');
+	background-color: #846e5e;
+}
+
+@media only screen and (min-width: 768px) {
+	.splash-wrapper.photos {
+		padding-bottom: 17%; /* 204 divided by 1200 */
+	}
+}
+
+main.main-content.photos {
+	margin: 26px auto;
+	max-width: 1090px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.introduction {
+	padding: 0;
+	text-align: center
+}
+
+.introduction p {
+	line-height: 160%;
+	margin: 10px 0 8px 0;
+}
+
+.introduction h1 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.album-container {
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+
+.album-wrap {
+	padding: 0;
+}
+
+.album-image-wrap {
+	height: 206px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+.album-image {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+	display: block;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 301px;
+	min-width:  300px;
+	object-fit: cover;
+	position: relative;
+}
+
+.album-image:hover {
+	cursor: pointer;
+}
+
+.album-description {
+	color: #0a2f6c;
+	margin: 0;
+	padding: 12px 2% 5px 2%;
+	text-align: center;
+}
+
+.album-date {
+	color: #0a2f6c;
+	margin: 0;
+	padding: 0 62px 20px 62px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 425px) {
+    .splash {
+        height: 330px;
+        padding-top: 84px;
+        width: 100%;
+    }
+}
