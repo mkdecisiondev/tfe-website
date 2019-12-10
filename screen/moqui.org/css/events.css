@@ -1,0 +1,250 @@
+/* media queries to match Bootstrap / Shoelace grid options for sm, md, lg, and xl */
+
+body {
+	background-color: #ebebeb;
+	color: #0a2f6c;
+	padding-top:87px;
+}
+
+.fb-page {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.splash-wrapper.events {
+	height: 0;
+	padding-bottom: 21.67%; /* 78 divided by 360 */
+	position: relative;
+	margin-bottom: 15px;
+	min-height: 78px
+}
+
+.splash-wrapper.events .splash-inner.events {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clear: both;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: -3px;
+	width: 100%;
+	min-height: 78px;
+	background-image: url('/images/events-splash-image.jpg');
+	background-color: #a98f6c;
+}
+
+pre {
+	white-space: pre-wrap;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 0 1em;
+	margin: 0 0 1em;
+	background: inherit
+}
+
+pre a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #0a2f6c;
+}
+
+pre a:hover {
+	text-decoration: underline;
+}
+
+pre a:before {
+	content: '  ';
+}
+
+@media only screen and (min-width: 768px) {
+	.splash-wrapper.events {
+		padding-bottom: 17.42% /* 209 divided by 1200 */
+	}
+	.splash-wrapper.events .splash-inner.events {}
+
+	pre {
+		font-size: 12px;
+	}
+}
+
+main.main-content.events {
+	margin: 0 auto;
+	max-width: 1090px;
+	padding-left: 1%;
+	padding-right: 1%
+}
+
+main.main-content.events #eventsTable.row {
+	align-items: flex-start;
+}
+
+main.main-content.events article.event-desription {
+	vertical-align: top;
+	padding: 0 1em;
+	margin: 0 0 1em 0;
+}
+
+.events-splash, .calendar-splash {
+	height: 170px;
+	width: 100%;
+}
+
+.calendar-splash {
+    display: none;
+}
+
+.event-cal-buttons {
+	border-radius: 9px;
+	border: 4px solid #0076a2;
+	color: #0076a2;
+	display: table;
+	margin: 10px auto;
+	width: 280px
+}
+
+.event-cal-buttons .toggle-button {
+	background-color: white;
+	border: 0;
+	color: inherit;
+	cursor: pointer;
+	font-size: 1.2em;
+	height: 34px;
+	outline: none;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+.event-cal-buttons .toggle-button:first-child {
+	float: left;
+}
+
+.event-cal-buttons .toggle-button:last-child {
+	float: right;
+}
+
+.event-cal-buttons .toggle-button:hover {
+	color: #15cce9;
+}
+
+.event-cal-buttons .active {
+	background: #0076a2;
+	color: white;
+}
+
+.event-cal-buttons .active:hover {
+	color: white;
+}
+
+.event-button {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.calendar-button {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.event-button.active,
+.calendar-button.active {
+	border-radius: 0;
+}
+
+.events-descriptions {
+	padding: 0;
+	text-align: center
+}
+
+.events-descriptions p {
+	line-height: 1.55;
+	margin: 10px 0 8px 0;
+}
+
+.events-descriptions p br {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.events-descriptions p br {
+		display: block;
+	}
+}
+
+.events-container {
+	padding: 10px 0;
+}
+
+.event-wrap {
+	padding: 0;
+	margin-bottom: 1em;
+}
+
+.event-image-wrap {
+	height: 206px;
+	padding: 0;
+	width: 100%;
+	text-align: center
+}
+
+.event-image-wrap a.anchor-around-thumbnail {
+	text-decoration: none;
+}
+
+.event-image-wrap img.event-image {
+	border-radius: 25px;
+	height: 100%;
+	max-width: 300px;
+	min-width:  300px;
+	object-fit: cover;
+	position: relative;
+	max-width: 300px;
+	min-width:  300px;
+	object-fit: cover;
+	position: relative;
+	height: 100%;
+	margin: 0;
+}
+
+.event-title-and-date {
+	color: hsl(217, 83%, 23%);
+	margin: 0;
+	padding: 7px 0;
+	text-align: center
+}
+
+.event-title-and-date a {
+	margin: 0 0 1em;
+	display: block;
+	text-decoration: none;
+	color: #0a2f6c;
+}
+
+.event-title-and-date a:hover {
+	text-decoration: underline;
+}
+
+.calendar-description {
+	display: none;
+}
+
+.calendar-container {
+    display: none
+}
+
+.calendar-container iframe {
+	display: block;
+	height: 300px;
+	margin: 0 auto;
+	padding: 10px 0 25px 0;
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.calendar-container iframe {
+		height: 500px;
+		width: 70%;
+	}
+}

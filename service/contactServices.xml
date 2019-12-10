@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
+
+
+<service verb="create" noun="Person" authenticate="anonymous-all">
+    <in-parameters>
+      
+        <!--mantle.party.PartyServices.create#Person-->
+        <parameter name="firstName" required="false"/>
+        <parameter name="lastName" required="false" />
+            
+        
+        <!--mantle.party.ContactServices.store#PartyContactInfo-->
+        <parameter name="emailAddress" required="false"/>
+        <parameter name="contactNumber" required="false"/>
+        
+        <!-- mantle.party.ContactServices.store#PartyContactInfo -->
+        <parameter name="description" required="false"/>
+        
+        
+
+
+    </in-parameters>
+
+    <out-parameters>
+        <parameter name="partyId" />
+        <parameter name="paymentMethodId"/>
+        <parameter name="orderId" />
+        
+    </out-parameters>
+
+    <actions>
+           
+        <service-call name="mantle.party.PartyServices.create#Person" in-map="[partyId:partyId] + context" out-map="context"/>
+         <log message="---------------${context}---------------------------"/>
+        <service-call name="mantle.party.ContactServices.store#PartyContactInfo" in-map="context" out-map="context"/>
+        <!-- <set field="firstNameOnAccount" from="firstName"/>
+        <set field="lastNameOnAccount" from="lastName"/> -->
+          <log message="---------------${context}---------------------------"/>
+        <service-call name="mantle.order.OrderServices.create#OrderContent" in-map="[partyId:partyId] + context" out-map="context"/>
+
+        
+       
+        
+        
+        
+    </actions>
+</service>
+</services>
+

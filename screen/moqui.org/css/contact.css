@@ -1,0 +1,196 @@
+/* media queries to match Bootstrap / Shoelace grid options for sm, md, lg, and xl */
+
+body {
+	padding-top: 87px;
+}
+
+.header {
+	box-shadow: 0px 3px 6px #acacac;
+}
+
+main.main-content.contact-us {
+	background: #e1e1e1;
+	margin-top: 0
+}
+
+main.main-content.contact-us .max-width{
+	max-width: 900px;
+	margin: 0 auto 2em;
+	padding: 45px 2% 0 2%;
+}
+
+@media all and (-ms-high-contrast: none) {
+	.form-and-cta {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.contact-form {
+		min-width:800px;
+	}
+}
+
+.contact-us h1 {
+	text-align: center;
+	font-weight: 400;
+	color: #0a2f6c;
+	margin-bottom: 1.5em;
+}
+
+.cta-and-address {
+	text-align: left;
+	padding-bottom: 3em
+}
+
+.cta-and-address .call-now-button {
+	color: #fff;
+	background-color: #0076a2;
+	border: none;
+	font-size: 18px;
+	padding: 7px 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 0 20px 0;
+	width: 280px;
+}
+
+.cta-and-address .call-now-button:hover {
+	background-color: #ebebeb;
+	color: #0076a2;
+}
+
+.cta-and-address .address {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.cta-and-address {
+		align-items: center
+	}
+	.cta-and-address .address {
+		text-align: right;
+		padding-right: 0;
+	}
+}
+
+.contact-form {
+	margin-bottom: 3em;
+	padding: 1em 2em 7em 2em;
+	background: white;
+	border-radius: 4px
+}
+
+.contact-form label {
+	color: #919191;
+	display: block;
+	margin-bottom: 0.25em;
+	margin-top: 1em;
+}
+
+.contact-form input {
+	width: 100%;
+	border-radius: 4px;
+	color: black;
+}
+
+.contact-form input,
+	.contact-form select{
+	min-height: 2em;
+	min-width: 200px;
+}
+
+.contact-form input,
+	.contact-form select,
+	.contact-form textarea {
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.contact-form input::placeholder,
+	.contact-form textarea::placeholder{
+	color: #acacac;
+	opacity: 1;
+}
+
+.contact-form select{
+	font-weight: normal;
+	color: #acacac;
+	-webkit-appearance: none;
+}
+
+.contact-form select option.type-of-q {
+	color: #000;
+	font-size: 14px;
+	padding: 0 0 5px;
+	line-height: 2em;
+}
+
+.contact-form select.changed {
+	color: black;
+}
+
+.contact-form textarea {
+	height: 150px;
+	font-family: inherit;
+	color: black;
+}
+
+.contact-form input,
+	.contact-form select,
+	.contact-form textarea {
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: #fff;
+	border: 1px solid #acacac;
+	border-radius: 0.25rem;
+}
+
+.contact-form button {
+	background-color: #0076a2;
+	border: none;
+	color: white;
+	float: right;
+	font-size: 18px;
+	line-height: 30px;
+	margin: 2em 0 0 0;
+	order: 2;
+	padding: 5px 1em;
+	text-transform: uppercase;
+}
+
+.contact-form button:hover {
+	background-color: #ebebeb;
+	color: #0076a2;
+	cursor: pointer;
+}
+
+.contact-form .hf-warning {
+	color: #ff2c34;
+	text-align: right;
+	font-size: 12px;
+	width: 100%;
+}
+
+.contact-form input:focus,
+	.contact-form select:focus {
+	border-color: #2dd0e8;
+}
+
+.contact-form .error-box input.hf-invalid,
+		.contact-form .error-box select.hf-invalid,
+		.contact-form .error-box textarea.hf-invalid {
+	border-color: #ff2c34;
+}
+
+.contact-form input:invalid,
+	.contact-form select:invalid,
+	.contact-form textarea:invalid {
+	outline: none;
+	box-shadow: none;
+}
+
+/* form.contact-form */

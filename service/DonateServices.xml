@@ -1,0 +1,69 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<services>
+
+    <service verb="create" noun="Person" authenticate="anonymous-all">
+        <in-parameters>
+            <!-- Create person -->
+            <parameter name="firstName" required="true"/>
+            <parameter name="middleName"/>
+            <parameter name="lastName" required="true"/>
+            <parameter name="emailAddress" required="true"/>
+            <parameter name="contactNumber" required="true"/>
+            <parameter name="address1" required="true"/>
+            <parameter name="unitNumber"/>
+            <parameter name="postalCode" required="true"/>
+            <parameter name="city" required="true"/>
+            <parameter name="stateProvinceGeoId" required="true"/>
+            <!-- Create credit card -->
+            <parameter name="amount" required="true"/>
+            <parameter name="cardNumber" required="true"/>
+            <parameter name="expireMonth" required="true"/>
+            <parameter name="expireYear" required="true"/>
+            <parameter name="cardSecurityCode" required="true"/>
+            <!-- frequency -->
+            <parameter name="frequency"/>
+        </in-parameters>
+
+        <out-parameters>
+        </out-parameters>
+
+        <actions>
+            <!-- Change format for date -->
+            <set field="expireDate" from="expireMonth + '/' + expireYear"/>
+            <!-- Create person/contact -->
+            <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/>
+            <service-call name="mantle.party.ContactServices.store#PartyContactInfo" in-map="context" out-map="context"/>
+            <!-- create credit card -->
+            <set field="firstNameOnAccount" from="firstName"/>
+            <set field="lastNameOnAccount" from="lastName"/>
+            <service-call name="mantle.account.PaymentMethodServices.create#CreditCard" in-map="context" out-map="context"/>
+            <!-- create payment -->
+            <!-- This is telling it to set the fromPartId value to the partyId value, instead of taking in a value from the form you are able to do it this way -->
+            <set field="fromPartyId" from="partyId"/>
+            <set field="toPartyId" default-value="UPS"/>
+            <service-call name="mantle.account.PaymentServices.create#Payment" in-map="context" out-map="context"/>
+            <!-- Stripe service -->
+            <set field="paymentGatewayConfigId" value="StripeDemo"/>
+            <log message="-------------------context: ${context}--------------------------"/>
+            <service-call name="Stripe.StripePaymentServices.authorizeAndCapture#Payment" in-map="context" out-map="context"/>
+            <!-- <set field="orderId" from="orderContentId"/> -->
+            <!-- Creates an orderHeader and one orderPart -->
+            <set field="grandTotal" from="amount"/>
+            <service-call name="mantle.order.OrderServices.create#Order" in-map="context" out-map="context"/>
+            <set field="subscriptionId" from="orderId"/>
+            <service-call name="mantle.order.OrderServices.create#OrderItem" in-map="context" out-map="context"/>
+            <log message="-------------------orderContentID: ${orderContentId}--------------------------"/>
+            <if condition="frequency">
+                <!-- TODO: figure out currect way to make a subscription -->
+                <!-- Only runs if we are creating a subscription, this is where we will put the service to create a subscription -->
+                <!-- orderItem has a subscription ID -->
+            </if>
+            <script>
+                println "-------------------create user account-------------------------"
+                println context
+            </script>
+        </actions>
+    </service>
+
+    
+</services> 

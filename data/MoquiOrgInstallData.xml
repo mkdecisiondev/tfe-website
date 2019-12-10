@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="install">
+    <!-- WikiSpace: framework -->
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="framework" description="Moqui Framework" restrictView="N"
+            rootPageLocation="dbresource://WikiSpace/framework.md"
+            publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
+    <moqui.resource.wiki.WikiPage wikiPageId="framework" wikiSpaceId="framework" pagePath="" createdByUserId="" publishedVersionName="01"/>
+    <moqui.resource.wiki.WikiPageHistory wikiPageId="framework" historySeqId="01" userId="" changeDateTime="1485028800000"/>
+    <moqui.resource.DbResource resourceId="framework_md" parentResourceId="WIKI_SPACE_ROOT" filename="framework.md" isFile="Y"/>
+    <moqui.resource.DbResourceFile resourceId="framework_md" mimeType="text/plain" versionName="01" rootVersionName="01"
+            fileData="# Moqui Framework"><histories versionName="01" versionDate="1485028800000" isDiff="N"/></moqui.resource.DbResourceFile>
+    <moqui.resource.DbResource resourceId="framework_dir" parentResourceId="WIKI_SPACE_ROOT" filename="framework" isFile="N"/>
+
+    <!-- WikiSpace: mantle -->
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="mantle" description="Mantle Business Artifacts" restrictView="N"
+            rootPageLocation="dbresource://WikiSpace/mantle.md"
+            publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
+    <moqui.resource.wiki.WikiPage wikiPageId="mantle" wikiSpaceId="mantle" pagePath="" createdByUserId="" publishedVersionName="01"/>
+    <moqui.resource.wiki.WikiPageHistory wikiPageId="mantle" historySeqId="01" userId="" changeDateTime="1485028800000"/>
+    <moqui.resource.DbResource resourceId="mantle_root" parentResourceId="WIKI_SPACE_ROOT" filename="mantle.md" isFile="Y"/>
+    <moqui.resource.DbResourceFile resourceId="mantle_root" mimeType="text/plain" versionName="01" rootVersionName="01"
+            fileData="# Mantle Business Artifacts"><histories versionName="01" versionDate="1485028800000" isDiff="N"/></moqui.resource.DbResourceFile>
+
+    <!-- WikiSpace: apps -->
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="apps" description="Moqui Applications" restrictView="N"
+            rootPageLocation="dbresource://WikiSpace/apps.md"
+            publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
+    <moqui.resource.wiki.WikiPage wikiPageId="apps" wikiSpaceId="apps" pagePath="" createdByUserId="" publishedVersionName="01"/>
+    <moqui.resource.wiki.WikiPageHistory wikiPageId="apps" historySeqId="01" userId="" changeDateTime="1485028800000"/>
+    <moqui.resource.DbResource resourceId="apps_root" parentResourceId="WIKI_SPACE_ROOT" filename="apps.md" isFile="Y"/>
+    <moqui.resource.DbResourceFile resourceId="apps_root" mimeType="text/plain" versionName="01" rootVersionName="01"
+            fileData="# Moqui Applications"><histories versionName="01" versionDate="1485028800000" isDiff="N"/></moqui.resource.DbResourceFile>
+
+    <!-- Projects -->
+    <mantle.work.effort.WorkEffort workEffortId="MWEB" workEffortName="Moqui Web Site"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+    <mantle.work.effort.WorkEffort workEffortId="MFW" workEffortName="Moqui Framework and Runtime"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+    <mantle.work.effort.WorkEffort workEffortId="MTC" workEffortName="Moqui Tool Components"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+    <mantle.work.effort.WorkEffort workEffortId="MBA" workEffortName="Mantle Business Artifacts (UDM, USL)"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+    <mantle.work.effort.WorkEffort workEffortId="MINT" workEffortName="Mantle Integrations"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+    <mantle.work.effort.WorkEffort workEffortId="MAPP" workEffortName="Moqui Applications (POPC, HM, SS)"
+            workEffortTypeEnumId="WetProject" statusId="WeInProgress" visibilityEnumId="WevGeneral"/>
+</entity-facade-xml>

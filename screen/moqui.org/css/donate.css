@@ -1,0 +1,256 @@
+
+/* Donate page */
+
+/* Bootstrap overrides for donation form */
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  input:required:invalid, input:invalid, textarea:invalid {
+    background-color: #fff !important;
+  }
+  
+  /* End bootstrap overrides */
+  
+  #footer {
+    display: none !important;
+  }
+  #top > nav {
+    display: none !important;
+  }
+  
+  .header-2 .main-nav.fixed-pos {
+    position: absolute;
+  }
+  #donateBody .secure-img {
+    position: absolute;
+    top: -60px;
+    left: 70%;
+  }
+  #donateBody, .inner {
+    background-color: #e1e1e1;
+    padding-bottom: 50px;
+  }
+  #donateBody .formContainer {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -40px;
+    max-width: 1050px;
+    margin: auto;
+  }
+  #donateBody .headerImg {
+    width: 100%;
+  }
+  #donateForm label {
+    font-size: 16px;
+  }
+  #donateForm fieldset {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #dadada;
+    margin: 0 0 25px 0;
+    padding: 15px 10% 15px 10%;
+    position: relative;
+  }
+  #donateForm fieldset div {
+    clear: both;
+  }
+  #donateForm legend {
+    border-bottom: 1px solid #dadada;
+    color: #6a7897;
+    float: left;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 0 10px 0;
+    padding: 0 25px 0 0;
+    text-transform: uppercase;
+  }
+  #donateForm {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    top: 25px;
+  }
+  #donateForm .radios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #donateForm input.active-amount {
+    cursor: pointer;
+    background: #2dd0e8;
+    color: white !important;
+  }
+  #donateForm input.active-amount.other-amount {
+    border: 2px solid #2dd0e8 !important;
+    background-color: white;
+    color: #6a7897 !important;
+  }
+  #donateForm .radios div, #donateForm .radios input {
+    border-radius: 6px;
+    border: 2px solid #6a7897;
+    color: #6a7897;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    min-width: 60px;
+    padding: 15px 0;
+    margin: 5px;
+    text-align: center;
+    text-shadow: none;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+  }
+  #donateForm #amount {
+    overflow: visible;
+    z-index: 999;
+    position: relative;
+    top: -45px;
+    left: 46%;
+    width: 65px;
+    height: 25px;
+    border: solid 1px grey;
+  }
+  #donateForm .radios div:hover, #donateForm .radios input:hover,  #donateForm .frequency input:hover{
+    cursor: pointer;
+    background: #2dd0e8;
+    color: white;
+  }
+  #donateForm .frequency {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .frequency input {
+    width: 100%;
+  }
+  .frequency input:last-of-type {
+    margin-top: 5px;
+  }
+  .frequency input {
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #6a7897;
+    color: #6a7897;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    min-width: 60px;
+    padding: 15px 0;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+  }
+  #donateForm .contact input, #donateForm .contact select, #donateForm .card input {
+    border: 1px solid #acacac;
+    border-radius: 4px;
+    padding: 5px 5px;
+    color: black;
+    width: 100%;
+    height: 32px;
+    background-color: #fff;
+  }
+  #donateForm .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #donateForm .contact select {
+    height: 32px;
+    cursor: pointer;
+  }
+  #donateForm .contact label, #donateForm .card label {
+    color: #919191;
+    display: block;
+    margin-bottom: 5px;;
+  }
+  #donateForm .contact div {
+    margin: 5px;
+    width: 100%;
+  }
+  ::placeholder {
+    color: grey;
+  }
+  #donateForm .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #donateForm .card div {
+    width: 100%;
+    margin: 5px;
+  }
+  #donateForm button {
+    background-color: #f6914a;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 25px auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 280px;
+  }
+  #donateForm button:hover {
+    background: #ffdaa6;
+    color: #f6914a;
+    cursor: pointer;
+  }
+  
+  
+  /* Donate media queries */
+  
+  @media screen and (min-width: 768px){
+    #donateBody .secure-img {
+      left: 83%;
+    }
+    #donateForm #amount {
+      left: 72%;
+    }
+    #donateBody .headerImg {
+      margin-top: 16px;
+    }
+    #donateForm .radios div, #donateForm .radios input {
+      width: 48%;
+    }
+    #donateForm .frequency input {
+      width: 48%;
+      margin: 5px;
+    }
+    #donateForm .contact div {
+      width: 97%;
+    }
+    #donateForm .contact .field-50 {
+      width: 49%;
+    }
+    #donateForm .contact .field-75 {
+      width: 73%;
+    }
+    #donateForm .contact .field-25 {
+      width: 23%;
+    }
+    #donateForm > fieldset > div.contact > div:nth-child(2), #donateForm > fieldset > div.contact > div:nth-child(7) {
+      padding-top: 4px;
+    }
+    #donateForm .card .field-33 {
+      width: 31%;
+    }
+  }
+  @media screen and (min-width: 1050px){
+    #donateForm .radios div, #donateForm .radios input {
+      width: 32%;
+    }
+    #donateForm .card .field-33 {
+      width: 32%;
+    }
+    #donateForm #amount {
+      left: 81%;
+    }
+  }
+  
+  /* end donate media queries */
+  
+  /* end donate page */
