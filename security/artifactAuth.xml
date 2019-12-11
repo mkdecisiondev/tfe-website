@@ -1,0 +1,16 @@
+<moqui.security.ArtifactGroup artifactGroupId="EMPLOYMENT_API"/>
+<moqui.security.ArtifactAuthz userGroupId="ADMIN" authzActionEnumId="AUTHZA_ALL" artifactGroupId="EMPLOYMENT_API" authzTypeEnumId="AUTHZT_ALLOW"/>
+
+<artifactGroups artifactGroupId="EMPLOYMENT_API">
+    <artifacts artifactName="component://humanResources/screen/humanResources/FindEmploymentApplication*" artifactTypeEnumId="AT_XML_SCREEN_TRANS" inheritAuthz="Y" nameIsPattern="Y"/>
+    <artifacts artifactName="component://humanResources/screen/humanResources/FindEmploymentApplication.xml" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="component://humanResources/screen/humanResources/IndividualEmploymentApplication*" artifactTypeEnumId="AT_XML_SCREEN_TRANS" inheritAuthz="Y" nameIsPattern="Y"/>
+    <artifacts artifactName="component://humanResources/screen/humanResources/IndividualEmploymentApplication.xml" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.create#EmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.create#EmploymentApplication" artifactTypeEnumId="AT_XML_SCREEN_TRANS" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.delete#EmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.get#EmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.get#IndividualMkEmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.get#MkEmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+    <artifacts artifactName="humanResources.HumanResourceServices.update#EmploymentApplication" artifactTypeEnumId="AT_SERVICE" inheritAuthz="Y" nameIsPattern="N"/>
+</artifactGroups>

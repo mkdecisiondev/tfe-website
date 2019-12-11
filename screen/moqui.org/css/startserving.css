@@ -1,0 +1,370 @@
+/* media queries to match Bootstrap / Shoelace grid options for sm, md, lg, and xl */
+
+body {
+	background: #e1e1e1;
+	padding-top: 87px !important;
+}
+
+.splash-wrapper.ss {
+	height: 0;
+	padding-bottom: 41.39%; /* 149 divided by 360 */
+	position: relative;
+	margin: 0 0 15px 0
+}
+
+.splash-wrapper.ss .splash-inner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.splash-wrapper.ss .startserving {
+	background-image: url('../images/startserving/startserving360x149.jpg');
+	background-color: #826e55;
+}
+
+@media (min-width: 425px) {
+	.splash-wrapper.splash-wrapper.ss {
+		padding-bottom: 32.08% /* 385 dividied by 1200 */
+	}
+	.splash-wrapper.ss .startserving {
+		background-image: url('../images/startserving/startserving1200x385.jpg');
+	}
+ }
+
+h1 {
+	 text-align: center;
+ }
+
+main.main-content {
+	 padding-top: 0;
+	 margin-top: 0 !important
+ }
+
+main.main-content h1 {
+	color: #0a2f6c;
+	font-size: 33px;
+	font-weight: normal;
+	margin: inherit;
+	padding: inherit;
+}
+
+p.startServingFormIntro {
+	 color: #0a2f6c;
+	 font-size: 16px;
+	 line-height: 150%;
+	 padding: inherit 3em;
+	 text-align: center;
+ }
+
+ .ssForm fieldset {
+	background: white;
+	border-radius: 8px;
+	border: 1px solid #dadada;
+	margin: 0 0 1.5em 0;
+	overflow-x: hidden;
+	padding: 0 0.5em 1em 0.5em;
+	position: relative
+}
+
+.ssForm fieldset legend {
+	border-bottom: 1px solid #dedede;
+	color: #6a7899;
+	float: left;
+	font-size: 18px;
+	line-height: 40px;
+	margin: 0 0 0.5em 0;
+	padding: 0 2em 0 0;
+	text-transform: uppercase;
+}
+
+fieldset .row {
+	clear: both;
+	margin: 0 5px;
+}
+
+fieldset .row.flex-required {
+	align-items: center;
+	display: flex;
+}
+
+.ssForm fieldset textarea {
+	border-radius: 4px;
+	border: 1px solid #acacac;
+	color: black;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px;
+	width: 100%;
+}
+
+.ssForm fieldset input,
+	fieldset select{
+	min-height: 2em;
+}
+
+.ssForm fieldset input,
+	fieldset select,
+	fieldset textarea {
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.ssForm fieldset input::placeholder,
+	fieldset textarea::placeholder{
+	color: #acacac;
+	opacity: 1;
+}
+
+.ssForm fieldset select{
+	font-weight: normal;
+	-webkit-appearance: none;
+}
+
+.ssForm fieldset select option.type-of-q {
+	color: #000;
+	font-size: 14px;
+	padding: 0 0 5px;
+	line-height: 2em;
+}
+
+.ssForm fieldset select.changed {
+	color: black;
+}
+
+.ssForm fieldset textarea {
+	height: 150px;
+	font-family: inherit;
+	color: black;
+}
+
+.ssForm fieldset input,
+	fieldset select,
+	fieldset textarea {
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: #fff;
+	border: 1px solid #acacac;
+	border-radius: 0.25rem;
+}
+
+.ssForm fieldset button {
+	background-color: #0076a2;
+	border: none;
+	color: white;
+	float: right;
+	font-size: 18px;
+	line-height: 30px;
+	margin: 2em 0 0 0;
+	order: 2;
+	padding: 5px 1em;
+	text-transform: uppercase;
+}
+
+.ssForm fieldset button:hover {
+	background-color: #ebebeb;
+	color: #0076a2;
+	cursor: pointer;
+}
+
+.ssForm fieldset .hf-warning {
+	color: #ff2c34;
+	text-align: right;
+	font-size: 12px;
+	width: 100%;
+}
+
+.ssForm fieldset input:focus,
+	fieldset select:focus {
+	border-color: #2dd0e8;
+}
+
+.ssForm fieldset .error-box input.hf-invalid,
+		fieldset .error-box select.hf-invalid,
+		fieldset .error-box textarea.hf-invalid {
+	border-color: #ff2c34;
+}
+
+.ssForm fieldset input:invalid,
+	fieldset select:invalid,
+	fieldset textarea:invalid {
+	outline: none;
+	box-shadow: none;
+}
+
+/* fieldset */
+
+.row.send-me-newsletters{
+
+	color: #0a2f6c
+}
+
+.row.send-me-newsletters label.with-square-checkbox {
+	cursor: pointer;
+	overflow: visible;
+	white-space: normal;
+	width: 100%;
+}
+
+.row.send-me-newsletters label.with-square-checkbox p.send-me-caption {
+	display: block;
+	line-height: 1.5em;
+	width: 100%;
+}
+
+.row.send-me-newsletters label.with-square-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.row.send-me-newsletters label.with-square-checkbox input[type="checkbox"] + span.fa {
+	border-radius: 4px;
+	border: 1px solid grey;
+	color: white;
+	content: '';
+	display: block;
+	float: left;
+	font-size: 9px;
+	height: 35px;
+	line-height: normal;
+	margin-right: 9px;
+	margin-top: 9px;
+	padding-left: 4px;
+	padding-top: 4px;
+	width: 35px;
+}
+
+.row.send-me-newsletters label.with-square-checkbox input[type="checkbox"]:checked + span.fa {
+	color: #15cce9;
+	font-size: 1.5em;
+}
+
+/* send-me-newsletter */
+
+form.startserving input {
+	font-size: 16px;
+}
+
+form.startserving button {
+	background-color: #0076a2;
+	color: white;
+	cursor: pointer;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0.5em 0.5em 0.5em 10px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+form.startserving button:active {
+	background-color: #b7b7b7;
+	color: #fff;
+}
+
+form.startserving button.clicked {
+	background: #b7b7b7;
+	color: white;
+	text-transform: none;
+}
+
+/* form.startserving */
+
+.ssForm fieldset.contact {
+
+	padding: 0 1rem 2.5rem 1rem
+
+}
+
+.ssForm fieldset.contact label {
+	color: #919191;
+	display: block;
+	margin-top: 1em;
+}
+
+.ssForm fieldset.contact .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* fieldset.contact */
+
+fieldset.serve section {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+fieldset.serve legend {
+	margin-bottom: 1.3em;
+	margin-left: 10px;
+}
+
+fieldset.serve .row {
+	margin-bottom: 1.5em;
+}
+
+fieldset.serve label {
+	color: #0a2f6c;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+fieldset.serve select {
+	border: 1px solid #acacac;
+	clear: both;
+	display: block;
+	font-size: 16px;
+	width: 100%;
+}
+
+fieldset.serve select option.serve-option {
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+/* fieldset.serve */
+
+select::-ms-expand {
+	display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+@media only screen and (min-width: 768px) {
+
+	fieldset.serve section:first-child {
+			padding-right: 1rem;
+		}
+
+	.thumbnail-background-wrapper {
+		height: 0;
+		margin: 0 0 15px 0;
+		padding-bottom: 66.46%; /* 321 divided by 483 */
+		position: relative
+	}
+
+	.thumbnail-background-wrapper .thumbnail-background-inner {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		clear: both;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		background-image: url('../images/startserving/startserving483x321.jpg');
+		background-color: #8d7e7e;
+	}
+}
