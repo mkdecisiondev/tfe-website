@@ -25,7 +25,7 @@
     <widgets>
     
          <render-mode>
-            <text type="html,vuet" location="component://moqui-org/template/donateform.html.ftl"/>
+            <text type="html,vuet" location="component://tfe-websitetemplate/donateform.html.ftl"/>
         </render-mode>
 
     </widgets>

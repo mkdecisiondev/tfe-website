@@ -17,6 +17,6 @@
     </actions>
     
     <widgets>
-        <render-mode><text type="html" location="component://moqui-org/template/startserving.html"/></render-mode>
+        <render-mode><text type="html" location="component://tfe-website/template/startserving.html"/></render-mode>
     </widgets>
 </screen>
