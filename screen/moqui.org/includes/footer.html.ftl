@@ -1,4 +1,3 @@
- <#--  testings -->
  <footer class="footer">
             <div class="max-width row row-flush">
                 <section class="footer-subscribe col-md-6">
