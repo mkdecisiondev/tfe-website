@@ -9,7 +9,7 @@
     </pre-actions>
     <widgets>
         <render-mode>
-            <text type="html" location="component://tfe-website/screen/moqui.org/photos.html"/>
+            <text type="html" location="component://tfe-website/screen/gndwebsite/photos.html"/>
         </render-mode>
     </widgets>
 </screen>
