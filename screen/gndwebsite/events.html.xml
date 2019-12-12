@@ -5,11 +5,11 @@
        <set field="head_keywords" value="moqui,ecosystem,mantle,ubpl,udm,data model,usl,service library,framework,free,open source,ecommerce,erp,crm,scm,eam,mrp,pos,rest api"/>
         <set field="head_title" value="Moqui Ecosystem"/>
         <set field="head_description" value="Moqui Ecosystem: Open Source Framework, Data Model, Service Library, REST API, Integrations, and Applications"/>
-        <set field="menu_active" value="home"/>
+        <set field="menu_active" value="events"/>
     </pre-actions>
     <widgets>
         <render-mode>
-            <text type="html" location="component://tfe-website/screen/moqui.org/contact.html"/>
+            <text type="html" location="component://tfe-website/screen/gndwebsite/events.html"/>
         </render-mode>
     </widgets>
 </screen>
