@@ -15,7 +15,7 @@
 
       <widgets>
     <render-mode>
-    <text type="html" location="component://moqui-org/screen/moqui.org/contact.html"/>
+    <text type="html" location="component://tfe-website/screen/moqui.org/contact.html"/>
     </render-mode>
     </widgets>
 </screen>
