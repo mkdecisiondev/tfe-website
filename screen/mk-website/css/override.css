@@ -5,7 +5,7 @@ h3 { margin-top: 20px; }
 .basic_html th, .basic_html td { padding: 2px 8px; border: #DDDDDF solid thin; }
 
 .presentation { height: 108px; background: #212c43; }
-.main-nav { height: 73px; background: #212c43; /* opacity: 0.95; filter: alpha(opacity=95); */ }
+.main-nav { height: 73px; background: white; /* opacity: 0.95; filter: alpha(opacity=95); */ }
 .top-info { height: 35px; border-top: black solid 1px; }
 .logo { padding-top: 16px; }
 .logo-img { margin-bottom: 20px; }
