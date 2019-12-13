@@ -5,8 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-2.1.xsd">
     <screen-facade>
         <screen location="component://webroot/screen/webroot/apps.xml">
-            <subscreens-item name="home" menu-title="Demo Application" menu-index="2" location="component://tfe-website/screen/mk.com.xml" menu-include="Y"/>
-            <!-- <subscreens-item name="m" menu-include="false" no-sub-path="true" location=""/> to make it homepage? -->
+            <subscreens-item name="home" menu-title="Demo Application" menu-index="2" location="component://tfe-website/screen/mk-website.xml" menu-include="Y"/>
         </screen>
     </screen-facade>
 </moqui-conf>
