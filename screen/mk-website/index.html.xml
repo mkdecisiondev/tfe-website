@@ -13,13 +13,14 @@ along with this software (see the LICENSE.md file). If not, see
 <http://creativecommons.org/publicdomain/zero/1.0/>.
 -->
 <screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd"
-        require-authentication="false" standalone="true">
-    <subscreens default-item="index.html"/>
+        require-authentication="false">
+    <pre-actions>
+        <set field="head_keywords" value="moqui,ecosystem,mantle,ubpl,udm,data model,usl,service library,framework,free,open source,ecommerce,erp,crm,scm,eam,mrp,pos,rest api"/>
+        <set field="head_title" value="Moqui Ecosystem"/>
+        <set field="head_description" value="Moqui Ecosystem: Open Source Framework, Data Model, Service Library, REST API, Integrations, and Applications"/>
+        <set field="menu_active" value="home"/>
+    </pre-actions>
     <widgets>
-        <render-mode><text type="html" location="component://tfe-website/screen/mk-website/includes/header.html.ftl" no-boundary-comment="true"/></render-mode>
-
-        <subscreens-active id="root-active"/>
-
-        <render-mode><text type="html" location="component://tfe-website/screen/mk-website/includes/footer.html.ftl"/></render-mode>
+        <render-mode><text type="html" location="component://tfe-website/screen/mk-website/index.html"/></render-mode>
     </widgets>
 </screen>
