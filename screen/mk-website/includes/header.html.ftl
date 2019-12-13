@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${head_description!""}">
     <meta name="keywords" content="${head_keywords!""}">
-    <title>${head_title!"Moqui Ecosystem"}</title>
+    <title>TFE-Website</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -55,7 +55,7 @@
                         <ul id="navigation">
                             <li<#if menu_active! == "framework" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
                                 <span class="sub-nav-toggle plus"></span>
-                                <a href="/index.html">Ecosystem</a>
+                                <a href="/index.html">hello</a>
                                 <ul>
                                     <li<#if menu_active! == "framework"> class="active-item"</#if>><a href="/framework.html">Framework</a></li>
                                     <li<#if menu_active! == "mantle"> class="active-item"</#if>><a href="/mantle.html">Business Artifacts</a></li>
