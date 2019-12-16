@@ -266,8 +266,9 @@
             events.style.display = '';
             calendar.style.display = 'none';
             eventButton.classList.add('active');
-            eventsNavItem.classList.add('active');
             calendarButton.classList.remove('active');
+            eventsNavItem.classList.add('active');
+          
             calendarNavItem.classList.remove('active');
             calendarDescription.style.display = 'none';
             eventDescription.style.display = 'block';
@@ -275,9 +276,10 @@
             events.style.display = 'none';
             calendar.style.display = 'block';
             // eventButton.className = 'toggle-button';
+            calendarButton.classList.add('active');
             eventButton.classList.remove('active');
             eventsNavItem.classList.remove('active');
-            calendarButton.classList.add('active');
+           
             calendarNavItem.classList.add('active');
             eventDescription.style.display = 'none';
             calendarDescription.style.display = 'block';
@@ -291,18 +293,20 @@
             events.style.display = '';
             calendar.style.display = 'none';
             eventButton.classList.add('active');
-            eventsNavItem.classList.add('active');
             calendarButton.classList.remove('active');
+            eventsNavItem.classList.add('active');
+            
             calendarNavItem.classList.remove('active');
             calendarDescription.style.display = 'none';
             eventDescription.style.display = 'block';
         } else if (hashVal === 'calendar') {
             events.style.display = 'none';
             calendar.style.display = 'block';
+            calendarNavItem.classList.add('active');
             eventButton.classList.remove('active');
             eventsNavItem.classList.remove('active');
             calendarButton.classList.add('active');
-            calendarNavItem.classList.add('active');
+            
             eventDescription.style.display = 'none';
             calendarDescription.style.display = 'block';
         }
@@ -311,9 +315,4 @@
     /***/ })
     
     /******/ });
-
-
-    $('.event-cal-button').on('click', '.btn', function() {
-        $(this).addClass('active').siblings().removeClass('active');
-      });
     //# sourceMappingURL=events.js.map
