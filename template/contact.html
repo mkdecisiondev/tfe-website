@@ -8,7 +8,7 @@
                 <h1>Contact Us</h1>
                 <div class="row row-flush">
                     <div class="form-and-cta">
-                        <form id="Contact" action="/apps/moqui.org/contact/Contact" class="contact-form" method="post">
+                        <form id="Contact" action="/tfe-website/contact/createRequest" class="contact-form" method="post">
                             <input type="hidden" id="redirect" name="redirect" value>
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -28,13 +28,13 @@
                                     <input id="phone" name="contactNumber" autocomplete="phone" type="tel" maxlength="13" required pattern="\d{3}[\-]{0,1}\d{3}[\-]{0,1}\d{4}" data-value-missing="Please enter a Phone Number" data-pattern-mismatch="Please enter a 10-digit Phone Number">
                                 </div>
                                 <div class="col-12">
-                                    <label for="type_of_question">Type of Question</label>
-                                    <select name="type_of_question" id="selectTypeOfQ">
-                                        <option name="description" class="type-of-q" value="general question">General Question</option>
-                                        <option name="description" class="type-of-q" value="reserve a service">Reserve a Service</option>
-                                        <option name="description" class="type-of-q" value="start serving">Start Serving</option>
-                                        <option name="description" class="type-of-q" value="suggestion">Suggestion</option>
-                                        <option name="description" class="type-of-q" value="other">Other</option>
+                                    <label for="requestName">Type of Question</label>
+                                    <select name="requestName" id="selectTypeOfQ">
+                                        <option class="type-of-q" value="general question">General Question</option>
+                                        <option class="type-of-q" value="reserve a service">Reserve a Service</option>
+                                        <option class="type-of-q" value="start serving">Start Serving</option>
+                                        <option class="type-of-q" value="suggestion">Suggestion</option>
+                                        <option class="type-of-q" value="other">Other</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
