@@ -1,7 +1,7 @@
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
 <services>
 
-    <service verb="create" noun="Person" authenticate="anonymous-all">
+    <service verb="create" noun="Person" authenticate="anonymous-view">
         <in-parameters>
             <!-- Create person -->
             <parameter name="firstName" required="true"/>
@@ -43,9 +43,11 @@
             <set field="toPartyId" default-value="UPS"/>
             <service-call name="mantle.account.PaymentServices.create#Payment" in-map="context" out-map="context"/>
             <!-- Stripe service -->
-            <set field="paymentGatewayConfigId" value="StripeDemo"/>
+
+            <!-- <set field="paymentGatewayConfigId" value="StripeDemo"/> -->
             <log message="-------------------context: ${context}--------------------------"/>
-            <service-call name="Stripe.StripePaymentServices.authorizeAndCapture#Payment" in-map="context" out-map="context"/>
+            <!-- <service-call name="Stripe.StripePaymentServices.authorizeAndCapture#Payment" in-map="context" out-map="context"/> -->
+            
             <!-- <set field="orderId" from="orderContentId"/> -->
             <!-- Creates an orderHeader and one orderPart -->
             <set field="grandTotal" from="amount"/>

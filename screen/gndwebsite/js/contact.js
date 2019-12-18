@@ -105,9 +105,9 @@
         theSelect.classList.add('changed');
     });
     
-    var currentURL = window.location.href.toString();
-    var redirectURL = currentURL.replace('contact.html', 'contact-thankyou.html');
-    document.getElementById('redirect').setAttribute('value', redirectURL);
+    // var currentURL = window.location.href.toString();
+    // var redirectURL = currentURL.replace('contact.html', 'contact-thankyou.html');
+    // document.getElementById('redirect').setAttribute('value', redirectURL);
     
     /***/ })
     
