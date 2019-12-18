@@ -412,5 +412,10 @@ footer .col-5, .col-7 {
     padding-bottom: 30px;
 }
 
+input {
+    border: 10px solid white;
+}
+
 /* footer css end */
+
 
