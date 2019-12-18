@@ -360,7 +360,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <div class="container ">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-3">
                                         <h2>Company</h2>
                                         <p class="nav-p">
                                             MK Decision’s <br>
@@ -370,7 +370,7 @@
                                             information.
                                          </p>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <div class="a-container">
                                             <li>
                                                 <a href="#">career
@@ -395,7 +395,7 @@
                                             </li>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <div class="a-container">
                                             <li>
                                                 <a href="#">Newsroom
@@ -419,7 +419,7 @@
                                             </li>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <div class="a-container">
                                             <li>
                                                 <a href="#">Contact

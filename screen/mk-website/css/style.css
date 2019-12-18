@@ -20,7 +20,6 @@
     width: 100vw;
     border: 0;
     border-top: 1px solid #CCC;
-
 }
 
 .navbar-nav a{
@@ -58,10 +57,24 @@
     display: block;
     position: absolute;
     left: -323px;
-    /* left: -800%; */
     width: 100vw;
     border: 0;
     border-top: 1px solid #CCC;
+}
+
+@media (min-width: 1445px) {
+
+    .navbar-nav .liPro:hover > ul.dropdown-menu {
+       left: -800%;
+    }
+
+    .navbar-nav .liUs:hover > ul.dropdown-menu {
+        left: -710%;
+    }
+
+    .navbar-nav .liCom:hover > ul.dropdown-menu {
+        left: -880%;
+    }
 }
 
 
