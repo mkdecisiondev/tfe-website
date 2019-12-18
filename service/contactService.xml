@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
+
+    <service verb="create" noun="ContactInfo">
+
+        <in-parameters>
+            <parameter name="firstName"/>
+            <parameter name="lastName"/>
+            <parameter name="companyName"/>
+            <parameter name="emailAddress"/>
+            <parameter name="phoneNumber"/>
+            <parameter name="reason"/>
+            <parameter name="howCanWeHelp"/>
+        </in-parameters>
+
+        <out-parameters>
+        </out-parameters>
+
+        <actions>
+            <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/> 
+        </actions>
+    </service>
+
+</services>

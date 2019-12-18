@@ -9,7 +9,7 @@
                 <div class="form-row">
                   <div class="col-12">
                     <label for="validationTooltip01">First name</label>
-                    <input type="text" class="form-control"required>
+                    <input name="firstName" type="text" class="form-control"required>
                     <div class="invalid-tooltip">
                         Please enter your first name
                     </div>
@@ -19,7 +19,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Last name</label>
-                        <input type="text" class="form-control"required>
+                        <input name="lastName" type="text" class="form-control"required>
                         <div class="invalid-tooltip">
                             Please enter your last name
                         </div>
@@ -29,7 +29,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Company name</label>
-                        <input type="text" class="form-control"required>
+                        <input name="companyName" type="text" class="form-control"required>
                         <div class="invalid-tooltip">
                             Please enter your conpany name
                         </div>
@@ -40,7 +40,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Email Address</label>
-                        <input type="email" class="form-control"required>
+                        <input name="emailAddress" type="email" class="form-control"required>
                         <div class="invalid-tooltip">
                             Please enter your email address
                         </div>
@@ -50,7 +50,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Primary Phone Number</label>
-                        <input type="tel" class="form-control" required>
+                        <input name="phoneNumber" type="tel" class="form-control" required>
                         <div class="invalid-tooltip">
                             Please enter a phone number.
                         </div>
@@ -61,7 +61,7 @@
                 <div class="form-row">
                   <div class="col-12">
                     <label for="validationTooltip04">Reason for contacting us</label>
-                    <select class="custom-select" required>
+                    <select name="reason" class="custom-select" required>
                       <option selected disabled value="">Select</option>
                       <option>Contact Sales</option>
                       <option>Request for Information</option>
@@ -77,8 +77,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Example textarea</label>
-                    <textarea class="form-control" rows="4"></textarea>
+                    <label>How can we help?</label>
+                    <textarea name="howCanWeHelp"class="form-control" rows="4"></textarea>
                 </div>
 
                 <button class="btn btn-primary submit-btn" type="submit">Submit form</button>
