@@ -10,19 +10,28 @@
             <parameter name="lastName"/>
         <!-- mantle.party.PartyServices.create#Organization -->
             <parameter name="organizationName"/>
+        <!-- mantle.party.ContactServices.store#PartyContactInfo -->
+            <parameter name="emailAddress"/>
+            <parameter name="contactNumber"/>
 
+            <parameter name="reason"/>
+            <parameter name="howCanWeHelp"/>
         </in-parameters>
 
         <out-parameters>
         </out-parameters>
 
         <actions>
-
             <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/> 
         <!-- set the partyId to null to avoid duplicate partyId -->
             <set field="partyId" from="null"/>
             <service-call name="mantle.party.PartyServices.create#Organization" in-map="context" out-map="context"/> 
-
+            <service-call name="mantle.party.ContactServices.store#PartyContactInfo" in-map="context" out-map="context"/> 
+        <!-- setting the requestName and description to use the parameters from the frontend -->
+            <set field="requestName" from="reason"/>
+            <set field="description" from="howCanWeHelp"/>
+            <log message="---------------------${description}-----------------------------"/>
+            <service-call name="mantle.request.RequestServices.create#Request" in-map="context" out-map="context"/>
         </actions>
     </service>
 
