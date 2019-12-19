@@ -13,7 +13,7 @@
         <!-- mantle.party.ContactServices.store#PartyContactInfo -->
             <parameter name="emailAddress"/>
             <parameter name="contactNumber"/>
-
+        <!-- mantle.request.RequestServices.create#Request -->
             <parameter name="reason"/>
             <parameter name="howCanWeHelp"/>
         </in-parameters>
@@ -30,7 +30,6 @@
         <!-- setting the requestName and description to use the parameters from the frontend -->
             <set field="requestName" from="reason"/>
             <set field="description" from="howCanWeHelp"/>
-            <log message="---------------------${description}-----------------------------"/>
             <service-call name="mantle.request.RequestServices.create#Request" in-map="context" out-map="context"/>
         </actions>
     </service>
