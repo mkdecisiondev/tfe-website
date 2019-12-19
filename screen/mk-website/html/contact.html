@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row">
         <div class="col-7">
-            <h1>let's Talk</h1>
+            <h1>Let's Talk</h1>
             <p>See how MK powers lenders by signing up for a personalized demo.</p>
 
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate action="/contact/createContact" method="post">
 
                 <div class="form-row">
                   <div class="col-12">
                     <label for="validationTooltip01">First name</label>
-                    <input name="firstName" type="text" class="form-control"required>
+                    <input name="firstName" type="text" class="form-control" required>
                     <div class="invalid-tooltip">
                         Please enter your first name
                     </div>
@@ -19,7 +19,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Last name</label>
-                        <input name="lastName" type="text" class="form-control"required>
+                        <input name="lastName" type="text" class="form-control" required>
                         <div class="invalid-tooltip">
                             Please enter your last name
                         </div>
@@ -29,7 +29,7 @@
                 <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Company name</label>
-                        <input name="companyName" type="text" class="form-control"required>
+                        <input name="organizationName" type="text" class="form-control"required>
                         <div class="invalid-tooltip">
                             Please enter your conpany name
                         </div>
@@ -37,7 +37,7 @@
                 </div>
 
 
-                <div class="form-row">
+                <!-- <div class="form-row">
                     <div class="col-12">
                         <label for="validationTooltip01">Email Address</label>
                         <input name="emailAddress" type="email" class="form-control"required>
@@ -79,11 +79,11 @@
                 <div class="form-group">
                     <label>How can we help?</label>
                     <textarea name="howCanWeHelp"class="form-control" rows="4"></textarea>
-                </div>
+                </div> -->
 
                 <button class="btn btn-primary submit-btn" type="submit">Submit form</button>
               </form>
-        </div>
+        </div> 
 
         <div class="col-5">
             <div>

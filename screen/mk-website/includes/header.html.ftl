@@ -20,14 +20,14 @@
 
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/contact.css" rel="stylesheet">
-    
+
     <script src="/js/app.js" defer></script>
     <script src="/js/contact.js" defer></script>
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    
+
         <div class="container">
             <a class="navbar-brand" href="/">
                 <svg alt="MK Decision" viewBox="0 0 140.54 47" width="140.54" height="47">
@@ -184,7 +184,7 @@
                                                         </svg>
                                                     </span>
                                                    <p class="oneLiner">Build brand recognition with <br>
-                                                   modern marketing pages</p> 
+                                                   modern marketing pages</p>
                                                 </a>
                                             </li>
                                         </div>
@@ -199,7 +199,7 @@
                                                         </svg>
                                                     </span>
                                                    <p class="oneLiner">Provide easy, online applications <br>
-                                                   for account creation</p> 
+                                                   for account creation</p>
                                                 </a>
                                             </li>
                                         </div>
@@ -286,7 +286,7 @@
                                     <div class="col-4">
                                         <div class="a-container">
                                             <#--  <img src="../img/sales-funnel.png" alt="">  -->
-                                            
+
                                             <li>
                                                 <a href="#">
                                                     <img src="../img/MK_All_logos_11_25_19-01.svg" alt="Dashboard" width="55" height="55">
@@ -355,7 +355,7 @@
                                             </li>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </ul>
@@ -442,7 +442,7 @@
                         </ul>
                     </li>
                 </ul>
-                <a href="/contact.html" class="btn btn-lg btn-dark">
+                <a href="/contact" class="btn btn-lg btn-dark">
                 Contact Sales
                 <span>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

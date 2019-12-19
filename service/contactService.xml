@@ -2,23 +2,27 @@
 
 <services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
 
-    <service verb="create" noun="ContactInfo">
+    <service verb="create" noun="Contact">
 
         <in-parameters>
+        <!-- mantle.party.PartyServices.create#Person -->
             <parameter name="firstName"/>
             <parameter name="lastName"/>
-            <parameter name="companyName"/>
-            <parameter name="emailAddress"/>
-            <parameter name="phoneNumber"/>
-            <parameter name="reason"/>
-            <parameter name="howCanWeHelp"/>
+        <!-- mantle.party.PartyServices.create#Organization -->
+            <parameter name="organizationName"/>
+
         </in-parameters>
 
         <out-parameters>
         </out-parameters>
 
         <actions>
+
             <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/> 
+        <!-- set the partyId to null to avoid duplicate partyId -->
+            <set field="partyId" from="null"/>
+            <service-call name="mantle.party.PartyServices.create#Organization" in-map="context" out-map="context"/> 
+
         </actions>
     </service>
 
