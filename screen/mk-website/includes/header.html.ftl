@@ -9,22 +9,27 @@
 
     <script src="https://kit.fontawesome.com/097dbc53d2.js" crossorigin="anonymous"></script>
 
+
     <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="../img/mk_diamond_logo_black-01.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
 
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
+
+    <script src="/js/app.js" defer></script>
+    <script src="/js/contact.js" defer></script>
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    
+
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <svg alt="MK Decision" viewBox="0 0 140.54 47" width="140.54" height="47">
                     <g id="a6927b95-af9b-41c0-94c1-d8c1428c2c76" data-name="Layer 2">
                         <g id="e69daf1e-cfe2-464d-8fcd-24ccf0afbfb8" data-name="Layer 1">
@@ -179,7 +184,7 @@
                                                         </svg>
                                                     </span>
                                                    <p class="oneLiner">Build brand recognition with <br>
-                                                   modern marketing pages</p> 
+                                                   modern marketing pages</p>
                                                 </a>
                                             </li>
                                         </div>
@@ -194,7 +199,7 @@
                                                         </svg>
                                                     </span>
                                                    <p class="oneLiner">Provide easy, online applications <br>
-                                                   for account creation</p> 
+                                                   for account creation</p>
                                                 </a>
                                             </li>
                                         </div>
@@ -281,7 +286,7 @@
                                     <div class="col-4">
                                         <div class="a-container">
                                             <#--  <img src="../img/sales-funnel.png" alt="">  -->
-                                            
+
                                             <li>
                                                 <a href="#">
                                                     <img src="../img/MK_All_logos_11_25_19-01.svg" alt="Dashboard" width="55" height="55">
@@ -350,7 +355,7 @@
                                             </li>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </ul>
@@ -437,7 +442,7 @@
                         </ul>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-lg btn-dark">
+                <a href="/contact" class="btn btn-lg btn-dark">
                 Contact Sales
                 <span>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

@@ -20,6 +20,6 @@ along with this software (see the LICENSE.md file). If not, see
         <set field="menu_active" value="home"/>
     </pre-actions>
     <widgets>
-        <render-mode><text type="html" location="component://tfe-website/screen/mk-website/index.html"/></render-mode>
+        <render-mode><text type="html" location="component://tfe-website/screen/mk-website/html/index.html"/></render-mode>
     </widgets>
 </screen>
