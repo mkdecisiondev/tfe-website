@@ -3,7 +3,7 @@
 
     <transition name="createRequest" require-session-token="false" method="post">
         <service-call name="contactServices.create#Request" in-map="context" out-map="context"/>
-        <default-response url="."/>
+        <default-response url="/contact-thankyou"/>
     </transition>
     
     <pre-actions>
