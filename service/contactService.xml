@@ -6,15 +6,15 @@
 
         <in-parameters>
         <!-- mantle.party.PartyServices.create#Person -->
-            <parameter name="firstName"/>
-            <parameter name="lastName"/>
+            <parameter name="firstName" required="true"/>
+            <parameter name="lastName" required="true"/>
         <!-- mantle.party.PartyServices.create#Organization -->
-            <parameter name="organizationName"/>
+            <parameter name="organizationName" required="true"/>
         <!-- mantle.party.ContactServices.store#PartyContactInfo -->
-            <parameter name="emailAddress"/>
-            <parameter name="contactNumber"/>
+            <parameter name="emailAddress" required="true"/>
+            <parameter name="contactNumber" required="true"/>
         <!-- mantle.request.RequestServices.create#Request -->
-            <parameter name="reason"/>
+            <parameter name="reason" required="true"/>
             <parameter name="howCanWeHelp"/>
         </in-parameters>
 
