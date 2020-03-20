@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-facade-xml type="seed">
+
+<!-- Shipping Options -->
+    <mantle.product.store.ProductStoreShipOption 
+        carrierPartyId="_NA_" productStoreId="POPC_DEFAULT" shipmentMethodEnumId="ShMthGround" sequenceNum="2"/>
+    <mantle.product.store.ProductStoreShipOption 
+        carrierPartyId="_NA_" productStoreId="POPC_DEFAULT" shipmentMethodEnumId="ShMthPickUp" sequenceNum="1"/>
+<!-- End of Shipping Options -->
+
+<!-- Categories -->
+    <!-- Store Categories -->
+    <mantle.product.category.ProductCategory 
+        productCategoryId="STAR_WARS" productCategoryTypeEnumId="PctCatalog" categoryName="All Star Wars Items" description=""/>
+    <mantle.product.category.ProductCategory 
+        productCategoryId="SW_CLOTHING" productCategoryTypeEnumId="PctCatalog" categoryName="Star Wars Clothing" description=""/>
+    <mantle.product.category.ProductCategory 
+        productCategoryId="SW_OFFICE" productCategoryTypeEnumId="PctCatalog" categoryName="Star Wars Office" description=""/>
+    <mantle.product.category.ProductCategory 
+        productCategoryId="SW_KITCHEN" productCategoryTypeEnumId="PctCatalog" categoryName="Star Wars Kitchen" description=""/>
+
+    <!-- Category Rollups -->
+    <mantle.product.category.ProductCategoryRollup 
+        productCategoryId="STAR_WARS" parentProductCategoryId="PopcBrowseRoot" sequenceNum="1"/>
+    <mantle.product.category.ProductCategoryRollup 
+        productCategoryId="SW_CLOTHING" parentProductCategoryId="PopcBrowseRoot" sequenceNum="2"/>
+    <mantle.product.category.ProductCategoryRollup 
+        productCategoryId="SW_OFFICE" parentProductCategoryId="PopcBrowseRoot" sequenceNum="3"/>
+    <mantle.product.category.ProductCategoryRollup 
+        productCategoryId="SW_KITCHEN" parentProductCategoryId="PopcBrowseRoot" sequenceNum="4"/>
+<!-- End of Categories -->
+
+<!-- Chewbacca USB -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="CHEWBACCA_USB" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Chewbacca USB" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="CHEWBACCA_USB" dimensionTypeId="ShippingWeight" value=".25" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="CHEWBACCA_USB" productPriceId="CHEWBACCA_L" priceTypeEnumId="PptList" price="9.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="CHEWBACCA_USB" productPriceId="CHEWBACCA_CLT" priceTypeEnumId="PptCurrent" price="8.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="CHEWBACCA_USB" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="CHEWBACCA_USB" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="CHEWBACCA_USB" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="CHEWBACCA_USB" productCategoryId="SW_OFFICE"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="CHEWBACCA_USB" productCategoryId="STAR_WARS"/>
+
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="CHEWBACCA_USB" assetId="CHEWBACCA_USB" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="CHEWBACCA_USB" assetDetailId="CHEWBACCA_USB" assetId="CHEWBACCA_USB" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+<!-- End of Chewbacca USB -->
+
+<!-- AT-AT Tape Dispenser -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="ATAT_TPDS" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="AT-AT Tape Dispenser" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="ATAT_TPDS" dimensionTypeId="ShippingWeight" value="1" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="ATAT_TPDS" productPriceId="ATAT_TPDS_L" priceTypeEnumId="PptList" price="19.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="ATAT_TPDS" productPriceId="ATAT_TPDS_CLT" priceTypeEnumId="PptCurrent" price="14.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="ATAT_TPDS" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="ATAT_TPDS" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="ATAT_TPDS" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="ATAT_TPDS" productCategoryId="SW_OFFICE"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="ATAT_TPDS" productCategoryId="STAR_WARS"/>
+
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="ATAT_TPDS" assetId="ATAT_TPDS" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="ATAT_TPDS" assetDetailId="ATAT_TPDS" assetId="ATAT_TPDS" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+<!-- End of AT-AT Tape Dispenser -->
+
+<!-- StormTrooper Toaster -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="TROOPER_TSTR" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="StormTrooper Toaster" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="TROOPER_TSTR" dimensionTypeId="ShippingWeight" value="5" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="TROOPER_TSTR" productPriceId="TROOPER_TSTR_L" priceTypeEnumId="PptList" price="29.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="TROOPER_TSTR" productPriceId="TROOPER_TSTR_CLT" priceTypeEnumId="PptCurrent" price="19.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="TROOPER_TSTR" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="TROOPER_TSTR" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="TROOPER_TSTR" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="TROOPER_TSTR" productCategoryId="SW_KITCHEN"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="TROOPER_TSTR" productCategoryId="STAR_WARS"/>
+
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="TROOPER_TSTR" assetId="TROOPER_TSTR" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" acquireCostUomId="USD" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y" receivedDate="1265184000000"/>
+    
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="TROOPER_TSTR" assetDetailId="TROOPER_TSTR" assetId="TROOPER_TSTR" quantityOnHandDiff="100" availableToPromiseDiff="100" effectiveDate="1265184000000"/>
+<!-- End of StormTrooper Toaster -->
+
+<!-- Darth Vader Waffle Maker -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="VADER_WFL_MKR" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Darth Vader Waffle Maker" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="VADER_WFL_MKR" dimensionTypeId="ShippingWeight" value="5" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="VADER_WFL_MKR" productPriceId="VADER_WFL_MKR_L" priceTypeEnumId="PptList" price="29.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="VADER_WFL_MKR" productPriceId="VADER_WFL_MKR_CLT" priceTypeEnumId="PptCurrent" price="24.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="VADER_WFL_MKR" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="VADER_WFL_MKR" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="VADER_WFL_MKR" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="VADER_WFL_MKR" productCategoryId="SW_KITCHEN"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="VADER_WFL_MKR" productCategoryId="STAR_WARS"/>
+
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="VADER_WFL_MKR" assetId="VADER_WFL_MKR" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="VADER_WFL_MKR" assetDetailId="VADER_WFL_MKR" assetId="VADER_WFL_MKR" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+<!-- End of Darth Vader Waffle Maker -->
+
+<!-- Droids Hat -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="DROIDS_HAT" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Droids Hat" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="DROIDS_HAT" dimensionTypeId="ShippingWeight" value=".5" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="DROIDS_HAT" productPriceId="DROIDS_HAT_L" priceTypeEnumId="PptList" price="14.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="DROIDS_HAT" productPriceId="DROIDS_HAT_CLT" priceTypeEnumId="PptCurrent" price="9.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="DROIDS_HAT" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="DROIDS_HAT" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="DROIDS_HAT" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="DROIDS_HAT" productCategoryId="SW_CLOTHING"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="DROIDS_HAT" productCategoryId="STAR_WARS"/>
+
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="DROIDS_HAT" assetId="DROIDS_HAT" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="DROIDS_HAT" assetDetailId="DROIDS_HAT" assetId="DROIDS_HAT" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+<!-- End of Droids Hat -->
+
+<!-- Stormtrooper Shirt -->
+    <!-- Product -->
+    <mantle.product.Product
+        productId="STORMTROOPER" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Stormtrooper Shirt" productTypeEnumId="PtVirtual" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    
+    <!-- Dimension -->
+    <mantle.product.ProductDimension
+        productId="STORMTROOPER" dimensionTypeId="ShippingWeight" value="1" valueUomId="WT_lb"/>
+
+    <!-- Price -->
+    <mantle.product.ProductPrice
+        productId="STORMTROOPER" productPriceId="STORMTROOPER_L" priceTypeEnumId="PptList" price="19.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+    <mantle.product.ProductPrice
+        productId="STORMTROOPER" productPriceId="STORMTROOPER_CLT" priceTypeEnumId="PptCurrent" price="14.99" pricePurposeEnumId="PppPurchase" priceUomId="USD" minQuantity="1"/>
+
+    <!-- Category -->
+    <mantle.product.category.ProductCategoryMember
+        productId="STORMTROOPER" productCategoryId="PopcAllProducts"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="STORMTROOPER" productCategoryId="PopcDeals"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="STORMTROOPER" productCategoryId="PopcFeatured"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="STORMTROOPER" productCategoryId="SW_CLOTHING"/>
+    <mantle.product.category.ProductCategoryMember
+        productId="STORMTROOPER" productCategoryId="STAR_WARS"/>
+
+    <!-- Variants -->
+    <mantle.product.Product
+        productId="STORMTROOPER_SM" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Stormtrooper Shirt Small" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    <mantle.product.Product
+        productId="STORMTROOPER_MD" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Stormtrooper Shirt Medium" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    <mantle.product.Product
+        productId="STORMTROOPER_LG" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Stormtrooper Shirt Large" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+    <mantle.product.Product
+        productId="STORMTROOPER_XL" assetTypeEnumId="AstTpInventory" assetClassEnumId="AsClsInventoryFin" chargeShipping="Y" productName="Stormtrooper Shirt XL" productTypeEnumId="PtAsset" ownerPartyId="ORG_ZIZI_RETAIL" returnable="Y" description="Test Shirt with variants for Store"/>
+
+    <!-- Associations -->
+    <mantle.product.ProductAssoc 
+        productId="STORMTROOPER" productAssocTypeEnumId="PatVariant" toProductId="STORMTROOPER_SM"/>
+    <mantle.product.ProductAssoc 
+        productId="STORMTROOPER" productAssocTypeEnumId="PatVariant" toProductId="STORMTROOPER_MD"/>
+    <mantle.product.ProductAssoc 
+        productId="STORMTROOPER" productAssocTypeEnumId="PatVariant" toProductId="STORMTROOPER_LG"/>
+    <mantle.product.ProductAssoc 
+        productId="STORMTROOPER" productAssocTypeEnumId="PatVariant" toProductId="STORMTROOPER_XL"/>
+    
+    <!-- Asset -->
+    <mantle.product.asset.Asset 
+        productId="STORMTROOPER_SM" assetId="STORMTROOPER_SM" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    <mantle.product.asset.Asset 
+        productId="STORMTROOPER_MD" assetId="STORMTROOPER_MD" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    <mantle.product.asset.Asset 
+        productId="STORMTROOPER_LG" assetId="STORMTROOPER_LG" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+    <mantle.product.asset.Asset 
+        productId="STORMTROOPER_XL" assetId="STORMTROOPER_XL" assetTypeEnumId="AstTpInventory" originalQuantity="10" acquireCost="6" containerId="ZWH_1234" availableToPromiseTotal="10" quantityOnHandTotal="10" locationSeqId="01010101" facilityId="ZIRET_WH" classEnumId="AsClsInventoryFin" ownerPartyId="ORG_ZIZI_RETAIL" statusId="AstAvailable" hasQuantity="Y"/>
+
+    <!-- Asset - Detail -->
+    <mantle.product.asset.AssetDetail
+        productId="STORMTROOPER_SM" assetDetailId="STORMTROOPER_SM" assetId="STORMTROOPER_SM" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+    <mantle.product.asset.AssetDetail
+        productId="STORMTROOPER_MD" assetDetailId="STORMTROOPER_MD" assetId="STORMTROOPER_MD" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+    <mantle.product.asset.AssetDetail
+        productId="STORMTROOPER_LG" assetDetailId="STORMTROOPER_LG" assetId="STORMTROOPER_LG" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+    <mantle.product.asset.AssetDetail
+        productId="STORMTROOPER_XL" assetDetailId="STORMTROOPER_XL" assetId="STORMTROOPER_XL" quantityOnHandDiff="100" availableToPromiseDiff="100"/>
+
+    <!-- Feature - Distinguishing -->
+    <mantle.product.feature.ProductFeatureAppl 
+        productId="STORMTROOPER_SM" productFeatureId="SizeSmall" applTypeEnumId="PfatDistinguishing"/>
+    <mantle.product.feature.ProductFeatureAppl 
+        productId="STORMTROOPER_MD" productFeatureId="SizeMedium" applTypeEnumId="PfatDistinguishing"/>
+    <mantle.product.feature.ProductFeatureAppl 
+        productId="STORMTROOPER_LG" productFeatureId="SizeLarge" applTypeEnumId="PfatDistinguishing"/>
+    <mantle.product.feature.ProductFeatureAppl
+        productId="STORMTROOPER_XL" productFeatureId="SizeXL" applTypeEnumId="PfatDistinguishing"/>
+<!-- End of Stormtrooper Shirt -->
+
+    <!-- ==================== Wiki Pages (content) ==================== -->
+
+    <!-- help page -->
+    <moqui.resource.wiki.WikiPage wikiPageId="zzw_help" wikiSpaceId="ZZW_RETAIL" pagePath="help" publishedVersionName="01">
+        <histories historySeqId="01" versionName="01" changeDateTime="1485028800000"/>
+    </moqui.resource.wiki.WikiPage>
+    <dbResources resourceId="zzw_help" filename="help.html" isFile="Y" parentResourceId="zzw_content_dir">
+        <file mimeType="text/html" versionName="01" rootVersionName="01">
+            <fileData><![CDATA[
+<div class="container">
+    <div class="row mt-4">
+        <div class="customer-menu col col-lg-2 col-md-3 mb-5">
+            <span class="modal-text">Help Center</span>
+            <ul class="customer-orders-ul">
+                <li><a href="/store/content/help">Delivery Rates</a></li>
+                <li><a href="/store/content/help#delivery">Delivery Times</a></li>
+                <li><a href="/store/content/help#customer-pick-up">Customer Pick Up</a></li>
+                <li><a href="/store/content/help#how-to-pay">How to Pay</a></li>
+            </ul>
+            <a class="customer-link" href="/store/content/about">About POP Shop</a>
+            <a class="customer-link" href="/store/content/contact">Contact Us</a>
+        </div>
+        <div class="col col-lg-9 offset-lg-1 col-12">
+            <span class="customer-orders-title help-title">Help Center</span>
+
+            <p class="order-text-color account-subtitle mt-3" id="delivery">Delivery Rates</p>
+
+            <hr class="account-hr" />
+            <p class="modal-text">We deliver nationwide from $2.99 for standard shipping. Express shipping cost $6.99 and comes with tracking.</p>
+
+            <p class="modal-text"><a class="customer-link" href="/store/content/contact">Contact us</a> for information about international orders. We can ship as far away Canada.</p>
+
+            <p></p>
+
+            <p class="order-text-color account-subtitle mt-5" id="customer-pick-up">Delivery Times</p>
+            <a class="account-back-top" href="/store/content/help">Back to Top</a>
+
+            <hr class="account-hr" />
+            <p class="modal-text">Standar shipping takes between 1 and 2 weeks. Express shipping takes 1 to 2 days.</p>
+
+            <p class="order-text-color account-subtitle mt-5" id="how-to-pay">Customer Pick Up</p>
+            <a class="account-back-top" href="/store/content/help">Back to Top</a>
+
+            <hr class="account-hr" />
+            <p class="modal-text">If you don&#39;t have a mail box then drop by our warehouses in Los Angeles or Atlanta.</p>
+
+            <p class="order-text-color account-subtitle mt-5">How To Pay</p>
+            <a class="account-back-top" href="/store/content/help">Back to Top</a>
+
+            <hr class="account-hr" />
+            <p class="modal-text">Paying is simple. All you need is a credit card and you&#39;re good to go. We accept Master Card and visa.</p>
+        </div>
+    </div>
+</div>
+            ]]></fileData>
+            <histories versionName="01" versionDate="1485028800000" isDiff="N"/>
+        </file>
+    </dbResources>
+
+    <!-- NOTE: these are not complete record sets (for about, contact), just override file data from mantle-udm demo data -->
+    <moqui.resource.DbResourceFile resourceId="zzw_about" rootVersionName="01" mimeType="text/html" versionName="01">
+        <fileData><![CDATA[
+<div class="container">
+    <span class="customer-orders-title help-title">About POP Shop</span>
+
+    <p class="modal-text mt-4">POP Shop is the official supplier of POP merchandise. Established in early 2016, POP Shop has an
+    extensive supplier network that allows us to source only the best clothing, drinkware and technology for all your POP needs.</p>
+
+    <p class="modal-text mt-4">All of our items come with a 100% guarantee of authenticity and each POP item you purchase comes
+    with a certificate to prove that you are indeed buying authentic POPware.</p>
+
+    <p class="modal-text mt-4">The POP Shop team working out of Los Angeles and Atlanta warehouses love what they do, and
+    particularly enjoy wearing high-vis jackets and a nifty helmet.</p>
+
+    <p class="modal-text mt-4">&quot;Working at POP Shop is okay&quot;<br /> Sylvester / warehouse technician</p>
+</div>
+        ]]></fileData>
+    </moqui.resource.DbResourceFile>
+    <moqui.resource.DbResourceFile resourceId="zzw_contact" rootVersionName="01" mimeType="text/html" versionName="01">
+        <fileData><![CDATA[
+<div class="container container-top">
+    <span class="customer-orders-title help-title">Contact Us</span>
+    <p class="modal-text mt-4">What can we help you with?</p>
+
+    <form>
+        <div class="form-group row">
+            <label class="col col-lg-4 col-sm-12 col-12 modal-text mt-2">Subject</label>
+            <div class="col col-lg-6 col-sm-12 col-12"><select class="form-control"><option value="01">Help cancelling an order</option></select></div>
+        </div>
+        <div class="form-group row">
+            <label class="col col-lg-4 col-sm-12 col-12 modal-text mt-2">Title</label>
+            <div class="col col-lg-6 col-sm-12 col-12"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-group row">
+            <label class="col col-lg-4 col-sm-12 col-12 modal-text mt-2">Message *</label>
+            <div class="col col-lg-6 col-sm-12 col-12"><textarea class="form-control contact-textarea" rows="9"></textarea></div>
+        </div>
+        <div class="form-group row">
+            <label class="col col-lg-4 col-sm-12 col-12 modal-text mt-2">Link to Product</label>
+            <div class="col col-lg-6 col-sm-12 col-12"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col col-lg-6 offset-lg-4 col-12 col-sm-12"><button class="btn btn-continue account-btn">Send Message</button></div>
+        </div>
+    </form>
+</div>
+        ]]></fileData>
+    </moqui.resource.DbResourceFile>
+
+    <!-- run index for search -->
+    <org.moqui.search.SearchServices.indexDataFeedDocuments dataFeedId="MantleSearch"/>
+    <org.moqui.search.SearchServices.indexDataFeedDocuments dataFeedId="PopCommerceSearch"/>
+
+
+</entity-facade-xml>
